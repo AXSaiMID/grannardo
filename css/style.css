@@ -475,13 +475,13 @@ section{ position:relative; }
 }
 .mat-card figure img{ transform:scale(1.1); transition:transform 1.2s var(--ease), filter .8s; filter:saturate(.92); }
 .mat-card:hover figure img{ transform:scale(1.0); filter:saturate(1.05); }
-.mat-meta{ display:flex; align-items:baseline; gap:16px; padding:20px 4px 0; }
-.mat-idx{ font:300 italic 14px var(--serif); color:var(--gold); }
+.mat-meta{ display:flex; align-items:flex-start; gap:18px; padding:22px 4px 0; }
+.mat-idx{ font:300 italic 14px/1.8 var(--serif); color:var(--gold); }
 .mat-meta h3{
   font-family:var(--caps); font-weight:400; text-transform:uppercase;
-  font-size:clamp(19px,1.9vw,27px); letter-spacing:.06em;
+  font-size:clamp(19px,1.9vw,27px); letter-spacing:.06em; line-height:1.18;
 }
-.mat-meta p{ margin-left:auto; font:400 10.5px/1.5 var(--sans); letter-spacing:.22em; text-transform:uppercase; color:var(--muted); }
+.mat-meta p{ margin-top:9px; font:400 10.5px/1.5 var(--sans); letter-spacing:.22em; text-transform:uppercase; color:var(--muted); }
 .mat-cta{
   display:flex; flex-direction:column; justify-content:space-between;
   height:clamp(380px, 52vh, 560px);
