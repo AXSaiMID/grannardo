@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gran Nardo — Mármores &amp; Granitos em Maringá | Grupo Nardo</title>
+  <meta name="description" content="Há mais de 15 anos a Gran Nardo esculpe mármores e granitos em Maringá/PR. Cozinhas, banheiros, escadas, áreas de lazer e projetos sob medida com ética, agilidade e qualidade. Parte do Grupo Nardo." />
+  <meta name="theme-color" content="#0B0A08" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230B0A08'/%3E%3Ctext x='32' y='45' font-family='Georgia, serif' font-size='34' fill='%23C8A55B' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Gran Nardo — Mármores & Granitos | Maringá/PR" />
+  <meta property="og:description" content="Pedra natural esculpida com precisão há mais de 15 anos. Já demos vida a mais de mil projetos — o próximo pode ser o seu." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+
+  <!-- Fonts (locais) -->
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/marcellus-latin-400-normal.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" crossorigin />
+  <link rel="preload" as="image" href="assets/img/hero.jpg" fetchpriority="high" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Gran Nardo Mármores e Granitos",
+    "description": "Marmoraria em Maringá/PR especializada em mármores e granitos sob medida. Parte do Grupo Nardo.",
+    "telephone": "+55 44 99108-2460",
+    "email": "alnmaringa@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. São Judas Tadeu, 532 — Jardim Imperial II",
+      "addressLocality": "Maringá",
+      "addressRegion": "PR",
+      "postalCode": "87023-200",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -23.3941483, "longitude": -51.938777 },
+    "url": "https://grannardo.com.br",
+    "sameAs": ["https://www.instagram.com/gruponardomaringa/", "https://gruponardo.com.br"]
+  }
+  </script>
+</head>
+<body data-loading>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-curtain c1"></div>
+    <div class="pre-curtain c2"></div>
+    <div class="pre-center">
+      <span class="pre-logo">Gran&nbsp;Nardo</span>
+      <span class="pre-rule"></span>
+      <span class="pre-word" id="preWord">mármores</span>
+    </div>
+    <div class="pre-foot">
+      <span class="pre-tag">Maringá — Paraná</span>
+      <span class="pre-count"><b id="preCount">00</b><i>%</i></span>
+    </div>
+  </div>
+
+  <!-- ══════════ CUSTOM CURSOR ══════════ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-label"></span></div>
+
+  <!-- ══════════ GRAIN ══════════ -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ══════════ SCROLL PROGRESS ══════════ -->
+  <div class="scroll-progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav-brand magnetic" data-hover>
+      <span class="nav-mono">GN</span>
+      <span class="nav-wordmark"><b>Gran Nardo</b><i>Mármores &amp; Granitos</i></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#servicos" data-hover>Serviços</a>
+      <a href="#materiais" data-hover>Materiais</a>
+      <a href="#processo" data-hover>Processo</a>
+      <a href="#grupo" data-hover>Grupo Nardo</a>
+      <a href="#contato" data-hover>Contato</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-gold magnetic nav-cta" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Gran%20Nardo%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+        <span>Orçamento</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
+        <i></i><i></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════ MENU OVERLAY ══════════ -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-inner">
+      <p class="menu-eyebrow">Navegação</p>
+      <nav class="menu-links">
+        <a href="#servicos" style="--i:1" data-hover><em>01</em>Serviços</a>
+        <a href="#materiais" style="--i:2" data-hover><em>02</em>Materiais</a>
+        <a href="#processo" style="--i:3" data-hover><em>03</em>Processo</a>
+        <a href="#grupo" style="--i:4" data-hover><em>04</em>Grupo Nardo</a>
+        <a href="#contato" style="--i:5" data-hover><em>05</em>Contato</a>
+      </nav>
+      <div class="menu-foot">
+        <a href="tel:+5544991082460" data-hover>(44) 99108-2460</a>
+        <a href="mailto:alnmaringa@gmail.com" data-hover>alnmaringa@gmail.com</a>
+        <span>Av. São Judas Tadeu, 532 — Maringá/PR</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/img/hero.jpg" alt="" class="hero-img" fetchpriority="high" />
+        <div class="hero-shade"></div>
+      </div>
+
+      <div class="hero-frame" aria-hidden="true"><i class="l"></i><i class="r"></i></div>
+
+      <div class="hero-top">
+        <span class="hero-eyebrow"><b>Grupo Nardo</b> — Marmoraria</span>
+        <span class="hero-eyebrow">Maringá — Paraná</span>
+      </div>
+
+      <h1 class="hero-title" aria-label="Gran Nardo — Mármores e Granitos">
+        <span class="ht-line"><span class="ht-word">GRAN</span></span>
+        <span class="ht-line ht-right"><span class="ht-word">NARDO</span></span>
+        <span class="ht-sub"><em>mármores</em> <span class="amp">&amp;</span> <em>granitos</em></span>
+      </h1>
+
+      <p class="hero-lead">
+        Esculpidas pela natureza, lapidadas por nós. Projetos sob medida
+        em pedra natural para quem constrói para durar.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-gold magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Gran%20Nardo%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+          <span>Solicitar orçamento</span>
+        </a>
+        <a class="btn btn-ghost magnetic" data-hover href="#servicos"><span>Explorar serviços</span></a>
+      </div>
+
+      <div class="hero-bottom">
+        <span class="hb-item">Av. São Judas Tadeu, 532 · Maringá/PR</span>
+        <span class="hb-scroll" aria-hidden="true"><i></i>role para descobrir</span>
+        <span class="hb-item">23°23'S · 51°56'W</span>
+      </div>
+    </section>
+
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Mármores <i>·</i> Granitos <i>·</i> Quartzitos <i>·</i> Travertinos <i>·</i> Ardósias <i>·</i> Porcelanatos <i>·</i>&nbsp;</span>
+        <span>Mármores <i>·</i> Granitos <i>·</i> Quartzitos <i>·</i> Travertinos <i>·</i> Ardósias <i>·</i> Porcelanatos <i>·</i>&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ MANIFESTO ══════════ -->
+    <section class="manifesto" id="sobre">
+      <p class="sec-label"><b>01</b>Quem somos</p>
+      <h2 class="manifesto-text" id="manifestoText">
+        Há mais de <em>quinze anos</em> transformamos rochas brutas em
+        <em>ambientes que atravessam gerações</em> — com atendimento personalizado,
+        tecnologia de corte e o orgulho de já ter dado vida a
+        <em>mais de mil projetos.</em>
+      </h2>
+      <div class="stats">
+        <div class="stat"><b class="stat-num" data-count="15" data-suffix="+">0</b><span class="stat-lab">anos de história</span></div>
+        <div class="stat"><b class="stat-num" data-count="1000" data-suffix="+">0</b><span class="stat-lab">projetos entregues</span></div>
+        <div class="stat"><b class="stat-num" data-count="5" data-suffix="">0</b><span class="stat-lab">empresas do grupo</span></div>
+        <div class="stat"><b class="stat-num" data-count="100" data-suffix="%">0</b><span class="stat-lab">atendimento personalizado</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════ SERVIÇOS — STICKY STACK ══════════ -->
+    <section class="servicos" id="servicos">
+      <header class="sec-head">
+        <p class="sec-label reveal-line"><b>02</b>Especialidades</p>
+        <h2 class="sec-title">
+          <span class="st-line reveal-line">Ambientes que</span>
+          <span class="st-line reveal-line">a <em>pedra</em> transforma</span>
+        </h2>
+      </header>
+
+      <div class="stack" id="stack">
+
+        <article class="scard" style="--i:1">
+          <div class="sc-inner">
+            <div class="sc-info">
+              <span class="sc-num">/ 01</span>
+              <h3 class="sc-title">Banheiros</h3>
+              <p class="sc-desc">Inspire-se com as infinitas maneiras de levar o mármore ao banheiro — revestimentos imponentes, cubas esculpidas na própria pedra e detalhes que parecem joalheria.</p>
+              <ul class="sc-tags"><li>Cubas esculpidas</li><li>Revestimentos</li><li>Nichos</li></ul>
+              <a class="sc-link magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20projeto%20de%20banheiro." target="_blank" rel="noopener"><span>Solicitar orçamento</span><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+            </div>
+            <figure class="sc-media" data-cursor="view"><img src="assets/img/servicos/banheiros.jpg" alt="Banheiro revestido em mármore escuro com veios dourados" loading="lazy" /></figure>
+          </div>
+        </article>
+
+        <article class="scard" style="--i:2">
+          <div class="sc-inner">
+            <div class="sc-info">
+              <span class="sc-num">/ 02</span>
+              <h3 class="sc-title">Cozinhas</h3>
+              <p class="sc-desc">A bancada é o palco da cozinha. Mármore e granito levam luxo, resistência e personalidade ao coração da casa — do gourmet ao dia a dia.</p>
+              <ul class="sc-tags"><li>Bancadas &amp; ilhas</li><li>Frontões</li><li>Cascatas</li></ul>
+              <a class="sc-link magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20projeto%20de%20cozinha." target="_blank" rel="noopener"><span>Solicitar orçamento</span><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+            </div>
+            <figure class="sc-media" data-cursor="view"><img src="assets/img/servicos/cozinhas.jpg" alt="Ilha de cozinha em mármore escuro com veios dourados" loading="lazy" /></figure>
+          </div>
+        </article>
+
+        <article class="scard" style="--i:3">
+          <div class="sc-inner">
+            <div class="sc-info">
+              <span class="sc-num">/ 03</span>
+              <h3 class="sc-title">Pisos &amp; Escadas</h3>
+              <p class="sc-desc">Aspecto de limpeza, tranquilidade e elegância em cada passo. Pisos e escadas em pedra natural valorizam o imóvel e nunca saem de cena.</p>
+              <ul class="sc-tags"><li>Escadas em degrau único</li><li>Pisos polidos</li><li>Soleiras</li></ul>
+              <a class="sc-link magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20pisos%20e%20escadas." target="_blank" rel="noopener"><span>Solicitar orçamento</span><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+            </div>
+            <figure class="sc-media" data-cursor="view"><img src="assets/img/servicos/escadas.jpg" alt="Escada em mármore com corrimão em metal dourado" loading="lazy" /></figure>
+          </div>
+        </article>
+
+        <article class="scard" style="--i:4">
+          <div class="sc-inner">
+            <div class="sc-info">
+              <span class="sc-num">/ 04</span>
+              <h3 class="sc-title">Áreas de Lazer</h3>
+              <p class="sc-desc">Rochas naturais são duráveis e dão o toque de beleza e rusticidade que uma área de lazer pede — da churrasqueira à borda da piscina.</p>
+              <ul class="sc-tags"><li>Churrasqueiras</li><li>Bordas de piscina</li><li>Fachadas</li></ul>
+              <a class="sc-link magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20%C3%A1rea%20de%20lazer." target="_blank" rel="noopener"><span>Solicitar orçamento</span><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+            </div>
+            <figure class="sc-media" data-cursor="view"><img src="assets/img/servicos/lazer.jpg" alt="Área de lazer com revestimento em pedra natural ao entardecer" loading="lazy" /></figure>
+          </div>
+        </article>
+
+        <article class="scard" style="--i:5">
+          <div class="sc-inner">
+            <div class="sc-info">
+              <span class="sc-num">/ 05</span>
+              <h3 class="sc-title">Banheiras</h3>
+              <p class="sc-desc">Elegância, sofisticação, beleza natural e singularidade. A maleabilidade da pedra permite formatos arrojados que viram escultura no banheiro.</p>
+              <ul class="sc-tags"><li>Banheiras esculpidas</li><li>Spas</li><li>Ofurôs</li></ul>
+              <a class="sc-link magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20banheira%20em%20pedra." target="_blank" rel="noopener"><span>Solicitar orçamento</span><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+            </div>
+            <figure class="sc-media" data-cursor="view"><img src="assets/img/servicos/banheiras.jpg" alt="Banheira esculpida em mármore escuro" loading="lazy" /></figure>
+          </div>
+        </article>
+
+        <article class="scard" style="--i:6">
+          <div class="sc-inner">
+            <div class="sc-info">
+              <span class="sc-num">/ 06</span>
+              <h3 class="sc-title">Projetos Diversos</h3>
+              <p class="sc-desc">Lareiras, painéis book-match, mesas, lavabos e peças únicas. A pedra certa transforma qualquer ambiente em algo ainda mais sofisticado.</p>
+              <ul class="sc-tags"><li>Lareiras</li><li>Painéis</li><li>Mesas &amp; aparadores</li></ul>
+              <a class="sc-link magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20projeto%20personalizado." target="_blank" rel="noopener"><span>Solicitar orçamento</span><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+            </div>
+            <figure class="sc-media" data-cursor="view"><img src="assets/img/servicos/diversos.jpg" alt="Painel de mármore book-match retroiluminado em sala escura" loading="lazy" /></figure>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════ MATERIAIS — HORIZONTAL SCROLL ══════════ -->
+    <section class="materiais" id="materiais">
+      <div class="mat-pin" id="matPin">
+        <header class="mat-head">
+          <div>
+            <p class="sec-label"><b>03</b>Materiais</p>
+            <h2 class="sec-title"><span class="st-line">Selecionados <em>a olho de mestre</em></span></h2>
+          </div>
+          <p class="mat-hint">arraste pelo scroll<span class="mh-line"><i id="matProg"></i></span></p>
+        </header>
+
+        <div class="mat-track" id="matTrack">
+          <article class="mat-card" data-cursor="drag">
+            <figure><img src="assets/img/materiais/carrara.jpg" alt="Textura de mármore Carrara" loading="lazy" /></figure>
+            <div class="mat-meta"><span class="mat-idx">01</span><h3>Carrara</h3><p>Mármore · Itália</p></div>
+          </article>
+          <article class="mat-card" data-cursor="drag">
+            <figure><img src="assets/img/materiais/nero.jpg" alt="Textura de mármore Nero Marquina" loading="lazy" /></figure>
+            <div class="mat-meta"><span class="mat-idx">02</span><h3>Nero Marquina</h3><p>Mármore · Espanha</p></div>
+          </article>
+          <article class="mat-card" data-cursor="drag">
+            <figure><img src="assets/img/hero.jpg" alt="Textura de mármore Nero Portoro com veios dourados" loading="lazy" /></figure>
+            <div class="mat-meta"><span class="mat-idx">03</span><h3>Nero Portoro</h3><p>Mármore · Itália</p></div>
+          </article>
+          <a class="mat-card mat-cta" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20showroom%20da%20Gran%20Nardo." target="_blank" rel="noopener">
+            <span class="mat-cta-big">+50 chapas<br/>no showroom</span>
+            <span class="mat-cta-small">Granitos, quartzitos e exóticos esperando pelo seu projeto<em>Agendar visita →</em></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PROCESSO ══════════ -->
+    <section class="processo" id="processo">
+      <div class="proc-grid">
+        <div class="proc-left">
+          <p class="sec-label reveal-line"><b>04</b>Processo</p>
+          <h2 class="sec-title">
+            <span class="st-line reveal-line">Do bloco bruto</span>
+            <span class="st-line reveal-line">à <em>instalação final</em></span>
+          </h2>
+          <p class="proc-desc reveal-line">Parque industrial próprio na Av. São Judas Tadeu, investimento contínuo em tecnologia e profissionais capacitados — para que cada etapa seja ágil, segura e impecável.</p>
+          <figure class="proc-img img-reveal" data-cursor="view">
+            <img src="assets/img/about.jpg" alt="Profissional cortando chapa de mármore na serra" loading="lazy" />
+            <figcaption>Nosso parque industrial — Maringá/PR</figcaption>
+          </figure>
+        </div>
+        <ol class="proc-steps">
+          <li class="pstep"><span class="pstep-num">01</span><div><h3>Orçamento sob medida</h3><p>Atendimento personalizado desde o primeiro contato — pelo WhatsApp, telefone ou visita ao showroom.</p></div></li>
+          <li class="pstep"><span class="pstep-num">02</span><div><h3>Escolha da chapa</h3><p>Você escolhe a pedra pessoalmente, veio a veio. Nossa equipe ajuda a combinar material, acabamento e ambiente.</p></div></li>
+          <li class="pstep"><span class="pstep-num">03</span><div><h3>Medição &amp; projeto</h3><p>Medição in loco com precisão milimétrica e estudo do melhor aproveitamento de cada chapa.</p></div></li>
+          <li class="pstep"><span class="pstep-num">04</span><div><h3>Corte &amp; acabamento</h3><p>Tecnologia de corte e bordas lapidadas no nosso parque industrial, com controle de qualidade peça a peça.</p></div></li>
+          <li class="pstep"><span class="pstep-num">05</span><div><h3>Instalação &amp; entrega</h3><p>Equipe própria, instalação ágil e segura — e a garantia de quem está em Maringá há mais de 15 anos.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══════════ GRUPO NARDO ══════════ -->
+    <section class="grupo" id="grupo">
+      <div class="grupo-preview" id="grupoPreview" aria-hidden="true"></div>
+      <header class="sec-head sec-head-center">
+        <p class="sec-label reveal-line"><b>05</b>Grupo Nardo</p>
+        <h2 class="sec-title">
+          <span class="st-line reveal-line">Um grupo.</span>
+          <span class="st-line reveal-line"><em>Cinco</em> especialidades.</span>
+        </h2>
+        <p class="sec-sub reveal-line">Amor e dedicação ao que fazemos fazem do Grupo Nardo sinônimo de qualidade e referência em Maringá.</p>
+      </header>
+
+      <ul class="grupo-list">
+        <li class="grow" data-img="assets/img/hero.jpg" data-cursor="view">
+          <span class="grow-idx">01</span>
+          <h3 class="grow-name">Gran Nardo<em class="grow-atual">este site</em></h3>
+          <span class="grow-cat">Mármores &amp; Granitos</span>
+          <span class="grow-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="grow" data-img="assets/img/servicos/cozinhas.jpg" data-cursor="view">
+          <span class="grow-idx">02</span>
+          <h3 class="grow-name">Nardo Planejados</h3>
+          <span class="grow-cat">Móveis planejados de alto padrão</span>
+          <span class="grow-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="grow" data-img="assets/img/servicos/diversos.jpg" data-cursor="view">
+          <span class="grow-idx">03</span>
+          <h3 class="grow-name">Gesso Nardo</h3>
+          <span class="grow-cat">Forros, sancas &amp; drywall</span>
+          <span class="grow-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="grow" data-img="assets/img/servicos/lazer.jpg" data-cursor="view">
+          <span class="grow-idx">04</span>
+          <h3 class="grow-name">Central Ar Maringá</h3>
+          <span class="grow-cat">Venda &amp; instalação de climatização</span>
+          <span class="grow-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="grow" data-img="assets/img/about.jpg" data-cursor="view">
+          <span class="grow-idx">05</span>
+          <h3 class="grow-name">Marido Maringá</h3>
+          <span class="grow-cat">Reparos, pintura &amp; instalações</span>
+          <span class="grow-arrow" aria-hidden="true">→</span>
+        </li>
+      </ul>
+      <div class="grupo-cta">
+        <a class="btn btn-ghost magnetic" data-hover href="https://gruponardo.com.br" target="_blank" rel="noopener"><span>Conhecer o Grupo Nardo</span></a>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTATO ══════════ -->
+    <section class="contato" id="contato">
+      <p class="sec-label reveal-line"><b>06</b>Contato</p>
+      <h2 class="cta-title">
+        <span class="ct-line">Já demos vida a</span>
+        <span class="ct-line"><em>mais de mil projetos.</em></span>
+        <span class="ct-line">O próximo é o <em>seu.</em></span>
+      </h2>
+
+      <div class="cta-actions">
+        <a class="btn btn-gold btn-xl magnetic" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Gran%20Nardo%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="wpp-ico" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.6 1.1 1.4 1.9 2.5 2.5.3.2.5.1.7-.1l.6-.8c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4.1.1.1.6-.2 1.3Z"/></svg>
+          <span>Chamar no WhatsApp</span>
+        </a>
+        <a class="btn btn-ghost btn-xl magnetic" data-hover href="tel:+5544991082460"><span>(44) 99108-2460</span></a>
+      </div>
+
+      <div class="contato-grid">
+        <div class="cinfo">
+          <div class="cinfo-item"><span>Endereço</span><p>Av. São Judas Tadeu, 532<br/>Jardim Imperial II · Maringá/PR<br/>CEP 87023-200</p>
+            <a class="cinfo-link" data-hover href="https://maps.app.goo.gl/MLhg8EvKXLzFYheu5" target="_blank" rel="noopener">Traçar rota →</a>
+          </div>
+          <div class="cinfo-item"><span>E-mail</span><p><a data-hover href="mailto:alnmaringa@gmail.com">alnmaringa@gmail.com</a></p></div>
+          <div class="cinfo-item"><span>Instagram</span><p><a data-hover href="https://www.instagram.com/gruponardomaringa/" target="_blank" rel="noopener">@gruponardomaringa</a></p></div>
+        </div>
+
+        <form class="cform" id="cform" novalidate>
+          <p class="cform-title">Peça seu orçamento</p>
+          <div class="cf-row">
+            <label class="cf-field"><span>Nome</span><input type="text" name="nome" placeholder="Seu nome" required data-hover /></label>
+            <label class="cf-field"><span>Telefone</span><input type="tel" name="telefone" placeholder="(44) 9 9999-9999" data-hover /></label>
+          </div>
+          <label class="cf-field"><span>O que você quer transformar?</span>
+            <select name="assunto" data-hover>
+              <option>Cozinha</option><option>Banheiro</option><option>Pisos &amp; Escadas</option>
+              <option>Área de Lazer</option><option>Banheira</option><option>Outro projeto</option>
+            </select>
+          </label>
+          <label class="cf-field"><span>Mensagem</span><textarea name="mensagem" rows="4" placeholder="Conte um pouco do seu projeto..." data-hover></textarea></label>
+          <button type="submit" class="btn btn-gold magnetic" data-hover><span>Enviar pelo WhatsApp</span></button>
+        </form>
+      </div>
+
+      <div class="map-wrap img-reveal">
+        <iframe title="Mapa — Gran Nardo, Av. São Judas Tadeu 532, Maringá" src="https://maps.google.com/maps?q=Av.%20S%C3%A3o%20Judas%20Tadeu%2C%20532%2C%20Maring%C3%A1%2C%20PR&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="foot-mono">GN</span>
+        <p>Ética, agilidade e qualidade —<br/>destacando-se a cada ano.</p>
+        <form class="foot-news" id="newsForm" novalidate>
+          <span>Receba ofertas exclusivas</span>
+          <div class="fn-row">
+            <input type="email" name="email" placeholder="seu@email.com" required data-hover />
+            <button type="submit" aria-label="Assinar" data-hover>→</button>
+          </div>
+          <small class="fn-ok" id="fnOk">Obrigado! Você entrou na lista.</small>
+        </form>
+      </div>
+      <nav class="foot-col" aria-label="Rodapé">
+        <span>Navegação</span>
+        <a href="#servicos" data-hover>Serviços</a>
+        <a href="#materiais" data-hover>Materiais</a>
+        <a href="#processo" data-hover>Processo</a>
+        <a href="#grupo" data-hover>Grupo Nardo</a>
+        <a href="#contato" data-hover>Contato</a>
+      </nav>
+      <div class="foot-col">
+        <span>Contato</span>
+        <a href="tel:+5544991082460" data-hover>(44) 99108-2460</a>
+        <a href="mailto:alnmaringa@gmail.com" data-hover>alnmaringa@gmail.com</a>
+        <a href="https://www.instagram.com/gruponardomaringa/" target="_blank" rel="noopener" data-hover>Instagram</a>
+        <a href="https://maps.app.goo.gl/MLhg8EvKXLzFYheu5" target="_blank" rel="noopener" data-hover>Como chegar</a>
+      </div>
+    </div>
+
+    <div class="foot-giant" aria-hidden="true"><span id="footGiant">GRAN&nbsp;NARDO</span></div>
+
+    <div class="foot-bar">
+      <span>© 2026 Gran Nardo Mármores e Granitos. Todos os direitos reservados.</span>
+      <span>Grupo Nardo · Maringá — PR</span>
+      <button class="to-top magnetic" id="toTop" data-hover>Voltar ao topo ↑</button>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="wpp-float" id="wppFloat" data-hover href="https://api.whatsapp.com/send?phone=5544991082460&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Gran%20Nardo%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.6 1.1 1.4 1.9 2.5 2.5.3.2.5.1.7-.1l.6-.8c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4.1.1.1.6-.2 1.3Z"/></svg>
+  </a>
+
+  <!-- Libs (locais) -->
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
