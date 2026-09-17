@@ -25,6 +25,21 @@ Site institucional cinematográfico da **Gran Nardo** (Grupo Nardo · Maringá/P
 - Botões magnéticos, grain animado, barra de progresso, menu fullscreen mobile
 - Schema.org LocalBusiness, meta OG, `prefers-reduced-motion` respeitado
 
+## Publicar / compartilhar
+
+**Link de apresentação (CDN do próprio repo, versão atual):**
+```
+https://cdn.statically.io/gh/AXSaiMID/grannardo@ce2d8f808f4211edfbfb634322fde8b77e01ab50/index.html
+```
+
+**GitHub Pages (link permanente — ativar 1x, 30 segundos):**
+1. Abra `Settings` → `Pages` no repositório
+2. Em `Source`, escolha **Deploy from a branch**
+3. Selecione a branch **`arena/01a0ad91-grannardo`** e a pasta **`/ (root)`** → `Save`
+4. Em ~2 minutos o site estará em: **https://axsaimid.github.io/grannardo/**
+
+Após fazer merge para a `main`, troque a branch do Pages para `main` (mesmo caminho acima).
+
 ## Rodar localmente
 
 ```bash
